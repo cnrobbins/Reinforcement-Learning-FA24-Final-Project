@@ -1,0 +1,15 @@
+To use the training script, copy and paste, and modify the parameters to suit your needs
+
+22 mus training
+
+Basic: training from all ones
+python train_MyoReflex_RL.py --move_dim 2 --tgt_vel 1 0 --seed 0 --delta_mode delayed --delta_control_mode asym --rl_algo PPO --timestep 1000000 --ep_limit 2000 --multi --chk_freq 31250 --eval_freq 15625 --vec_num 32 --param_path reflex_param --save_path PPO_output
+
+
+Continue training 
+python train_MyoReflex_RL.py --move_dim 2 --tgt_vel 1 0 --seed 0 --delta_mode delayed --delta_control_mode asym --rl_algo PPO --timestep 1000000 --ep_limit 2000 --multi --chk_freq 31250 --eval_freq 15625 --vec_num 32 --param_path reflex_param --save_path PPO_output --model_path PPO_output
+
+
+Mutually exclusive arguments
+--param_path : Specify the folder path of the control parameters you want to start from. Expects a text file of parameters. Define path from the folder the optimization script is run from.
+--model_path : Specify the folder path of the zipped file you get from a saved RL training run, or the checkpoints
