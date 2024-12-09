@@ -11,4 +11,4 @@ Processing Script: Post-processing tools for analyzing kinematics, rewards, and 
 Results: PPO and A2C outcomes from both Slow-down and Speed-up conditions, including videos and reference plots.
 
 Note:
-A large portion of the necessary dependencies, including the CMA-ES optimization scripts and neuromechanical model control scripts, are exclusive to the NeuMove Laboratory and are not included in this repository. As a result, this codebase cannot be fully executed without access to those components. If you have further questions, you can reach me at robbins.cal@northeastern.edu
+A large portion of the necessary dependencies, including the CMA-ES optimization scripts and neuromechanical model control scripts, are exclusive to the NeuMove Laboratory and are not included in this repository. As a result, this codebase cannot be fully executed without access to those components. If you have further questions, you can reach me at robbins.cal@northeastern.edu or ton.v@northeastern.edu
